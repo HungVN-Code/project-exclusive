@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="hunter">
+            <p>
+                <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
+                <a href="#">ShopNow</a>
+            </p>
+            <div class="language">
+                <span>Vietnamese</span>
+                <i class='bx bx-chevron-down'></i>
+                <nav class="language-list">
+                    <div class="language-item">English</div>
+                    <div class="language-item">China</div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="navbar">
+                <a href="./index.html" class="logo">Exclusive</a>
+                <div class="sidebar">
+                    <a class="sidebar-item" href="./index.html">Home</a>
+                    <a class="sidebar-item" href="./contact.html">Contact</a>
+                    <a class="sidebar-item" href="./about.html">About</a>
+                    <a class="sidebar-item active" href="./register.html">Sign Up</a>
+                </div>
+                <div class="tools-list">
+                    <div class="search-nav">
+                        <input class="search-input" type="text" placeholder="Search...">
+                        <i class='bx bx-search icon-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end -->
+
+    <!-- main -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="form-group">
+                <img class="form-banner" src="./assets/images/form-banner.png" alt="form-banner">
+                <form class="form-control" action="" method="post">
+                    <h1>Create an account</h1>
+                    <div class="form-box">
+                        <input class="form-input" type="text" placeholder="Name">
+                    </div>
+                    <div class="form-box">
+                        <input class="form-input" type="email" placeholder="Email or Phone Number">
+                    </div>
+                    <div class="form-box">
+                        <input class="form-input" type="password" placeholder="Password" id="passwordField">
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    </div>
+                    <button type="submit" class="form-button form-button__btn">Create Account</button>
+                    <button type="submit" class="form-button form-button__google">
+                        <img src="./assets/images/Icon-Google.png" alt="">
+                        <span>Sign up with Google</span>
+                    </button>
+                    <p>Already have account? <a href="./login.html">Log in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- footer -->
+    <footer>
+        <section class="container footer-top">
+            <div class="footer-top__item">
+                <a href="./index.html" class="logo">Exclusive</a>
+                <p>Get 10% off your first order</p>
+                <div class="footer-submit">
+                    <input type="email" placeholder="Enter your email">
+                    <i class='bx bxl-telegram'></i>
+                </div>
+            </div>
+            <div class="footer-top__item">
+                <h3>Support</h3>
+                <p>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
+                <p>exclusive@gmail.com</p>
+                <p>+88015-88888-9999</p>
+            </div>
+            <div class="footer-top__item">
+                <h3>Support</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-top__item">
+                <h3>Download App</h3>
+                <img src="./assets/images/frame.png" alt="">
+                <ul>
+                    <li>
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="footer-below">&#169; Copyright Rimel 2023. All right reserved</div>
+    </footer>
+    <!-- end -->
+
+    <!-- js -->
+    <script>
+        const passwordField = document.getElementById("passwordField");
+        const togglePassword = document.getElementById("togglePassword");
+    
+        // Sự kiện click vào biểu tượng mắt
+        togglePassword.addEventListener("click", () => {
+            if (passwordField.type === "password") {
+                // Nếu đang ẩn mật khẩu, hiển thị mật khẩu
+                passwordField.type = "text";
+                togglePassword.classList.remove("bi-eye-slash");
+                togglePassword.classList.add("bi-eye");
+            } else {
+                // Nếu đang hiển thị mật khẩu, ẩn mật khẩu
+                passwordField.type = "password";
+                togglePassword.classList.remove("bi-eye");
+                togglePassword.classList.add("bi-eye-slash");
+            }
+        });
+    </script>
+</body>
+</html>
