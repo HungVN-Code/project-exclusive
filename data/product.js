@@ -1,7 +1,7 @@
 let product = [
     {
         id: 1,
-        name: "HAVIT HV-G92 Gamepad",
+        name: "HAVIT HV-G92 Gamepad a b c d e f g h l m n o f u",
         images: {
             imageOne: "product-1a.png",
             imageTwo: "product-1b.png",

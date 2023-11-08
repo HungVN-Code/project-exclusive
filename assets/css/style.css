@@ -38,6 +38,14 @@ textarea {
     overflow: hidden;
 }
 
+.webkit-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 /* 
     *** header ***
@@ -1405,7 +1413,11 @@ header {
     padding: 10px 0;
 }
 .cart-wrap table tbody tr td {
+    height: 80px;
     border-bottom: 1px solid var(--ball-color);
+}
+.cart-wrap table tbody tr td:nth-child(2) {
+    line-height: 80px;
 }
 .cart-img {
     width: 15%;
@@ -1432,7 +1444,7 @@ header {
     height: 50px;
     background: transparent;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--bg-hunter);
     cursor: pointer;
 }
