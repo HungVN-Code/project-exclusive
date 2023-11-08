@@ -1603,6 +1603,9 @@ header {
     height: 100%;
     padding: 0 3.5rem;
 }
+.checkout-right .cart-poin {
+    width: 400px;
+}
 
 
 
