@@ -82,71 +82,71 @@
     <!-- main -->
     <div class="container">
         <div class="wrapper">
-            <div class="wishlist-nav">
+            <div class="contact-nav">
                 <div class="contact-title">
                     <div class="contact-fix">
                         <a href="./index.html">Home</a>
                         &#160;/&#160;
-                        <p>Cart</p>
+                        <a href="./cart.html">Cart</a>
+                        &#160;/&#160;
+                        <p>CheckOut</p>
                     </div>
                 </div>
-                <div class="cart-wrap">
-                    <table>
-                        <thead>
-                            <th>Product picture</th>
-                            <th>Name product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Subtotal</th>
-                            <th>Action</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="cart-img">
-                                    <img src="./assets/images/product-1a.png" alt="img">
-                                </td>
-                                <td class="cart-text">HAVIT HV-G92 Gamepad</td>
-                                <td class="cart-text">$160</td>
-                                <td class="cart-adjust"><input type="number" min="1" value="1"></td>
-                                <td class="cart-text">$160</td>
-                                <td>
-                                    <a href="#">
-                                        <button><i class="bi bi-trash3"></i></button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="cart-img">
-                                    <img src="./assets/images/product-1a.png" alt="img">
-                                </td>
-                                <td class="cart-text">HAVIT HV-G92 Gamepad</td>
-                                <td class="cart-text">$160</td>
-                                <td class="cart-adjust"><input type="number" min="1" value="1"></td>
-                                <td class="cart-text">$160</td>
-                                <td>
-                                    <a href="#">
-                                        <button><i class="bi bi-trash3"></i></button>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="cart-synthetic">
-                        <h4>Total number of products: <span>2</span> product</h4>
-                        <button class="remove-all" type="button">Remove all</button>
-                    </div>
-                    <div class="cart-pay">
+                <div class="checkout-nav">
+                    <form action="" method="post">
+                        <div class="checkout-group">
+                            <label>First Name <span>*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="checkout-group">
+                            <label>Company Name <span>*</span></label>
+                            <input type="text" required>
+                        </div>
+                        <div class="checkout-group">
+                            <label>Street Address <span>*</span></label>
+                            <input type="text" required>
+                        </div>
+                        <div class="checkout-group">
+                            <label>Apartment, floor, etc. (optional) <span>*</span></label>
+                            <input type="text" required>
+                        </div>
+                        <div class="checkout-group">
+                            <label>Town/City <span>*</span></label>
+                            <input type="text" required>
+                        </div>
+                        <div class="checkout-group">
+                            <label>Phone Number <span>*</span></label>
+                            <input type="number" required>
+                        </div>
+                        <div class="checkout-group">
+                            <label>Email Address <span>*</span></label>
+                            <input type="text" required>
+                        </div>
+                    </form>
+                    <div class="checkout-right">
                         <div class="cart-pay__body">
                             <div class="cart-poin"><p>Total cost of goods:</p> <span>$240</span></div>
                             <div class="cart-poin"><p>Transport fee:</p> <span>$4</span></div>
                             <div class="cart-poin"><p>Discount code (if any):</p> <span>$0</span></div>
                             <div class="cart-poin"><p>Total payment:</p> <span>$240</span></div>
                         </div>
-                        <div class="cart-footer">
-                            <p>Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo <a href="#">Điều khoản của Exclusive</a></p>
-                            <a href="./checkout.html">
-                                <button class="order-cart" type="button">Proceed to payment</button>
-                            </a>
+                        <form action="" method="post" class="checkout-bank">
+                            <nav>
+                                <strong>
+                                    <input type="checkbox">
+                                    <span>Bank</span>
+                                </strong>
+                                <img src="./assets/images/bank.png" alt="img">
+                            </nav>
+                            <nav>
+                                <nav>
+                                    <input type="checkbox">
+                                    <span>Cash on delivery</span>
+                                </nav>
+                            </nav>
+                        </form>
+                        <div class="button-check">
+                            <button type="submit" class="button-buy">Place Order</button>
                         </div>
                     </div>
                 </div>
