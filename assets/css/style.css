@@ -1773,6 +1773,201 @@ header {
 }
 
 
+/*
+    *** yield-nav ***
+*/
+.yield-nav {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0 5rem 0;
+}
+.yield-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.yield-img {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 25% 73%;
+
+}
+.yield-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.yield-item {
+    background: var(--ball-color);
+    width: 100%;
+    height: calc((100% - 30px) / 4);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--tr-0-3);
+}
+.yield-item.active {
+    border: 3px solid var(--pink-hover);
+}
+.yield-item:last-child {
+    margin-bottom: 0;
+}
+.yield-item img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+.yield-img__big {
+    width: 100%;
+    height: 100%;
+    background: var(--ball-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    margin-left: 3%;
+
+}
+.yield-img__big img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.yield-wrap {
+    width: 100%;
+    height: auto;
+    padding-left: 1.5rem;
+}
+.yield-wrap h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--bg-hunter);
+}
+.yield-wrap h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--pink-hover);
+    margin: .5rem 0;
+}
+.yield-wrap p {
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--bg-hunter);
+    -webkit-line-clamp: 3;
+}
+.yield-wrap hr {
+    width: 100%;
+    height: 1px;
+    margin: 1rem 0;
+    background: var(--ball-color);
+}
+.size {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.size label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-hunter);
+}
+.size-button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid var(--ball-color);
+    margin-left: 1rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--bg-hunter);
+    cursor: pointer;
+    transition: var(--tr-0-3);
+}
+.size-button.active,
+.size-button:hover {
+    background: var(--pink-hover);
+    color: var(--bg-body);
+}
+.yield-action {
+    width: 100%;
+    height: 40px;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.yield-number {
+    display: flex;
+    align-items: center;
+}
+.yield-number button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid var(--ball-color);
+    background: transparent;
+    font-size: 1.2rem;
+    color: var(--bg-hunter);
+    transition: var(--tr-0-3);
+}
+.yield-number button:hover {
+    background: var(--pink-hover);
+    color: var(--bg-body);
+}
+.yield-number input {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid var(--ball-color);
+    background: transparent;
+    font-size: 1rem;
+    color: var(--bg-hunter);
+}
+#add-like {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid var(--ball-color);
+    background: transparent;
+    color: var(--text-gray);
+    border-radius: 4px;
+}
+#add-like:hover,
+.buy-now:hover {
+    background: var(--pink-hover);
+    color: var(--bg-body);
+}
+.buy-now {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background: var(--pink-color);
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--bg-body);
+    cursor: pointer;
+    margin: .5rem 0;
+    transition: var(--tr-0-3);
+}
+.yeair-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+.yield-product {
+    margin-top: 2rem;
+}
+
 
 /*
     *** footer ***

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="hunter">
+            <p>
+                <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
+                <a href="#">ShopNow</a>
+            </p>
+            <div class="language">
+                <span>Vietnamese</span>
+                <i class='bx bx-chevron-down'></i>
+                <nav class="language-list">
+                    <div class="language-item">English</div>
+                    <div class="language-item">China</div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="navbar">
+                <a href="./index.html" class="logo">Exclusive</a>
+                <div class="sidebar">
+                    <a class="sidebar-item" href="./index.html">Home</a>
+                    <a class="sidebar-item" href="./contact.html">Contact</a>
+                    <a class="sidebar-item" href="./about.html">About</a>
+                    <a class="sidebar-item" href="./register.html">Sign Up</a>
+                </div>
+                <div class="tools-list">
+                    <div class="search-nav">
+                        <input class="search-input" type="text" placeholder="Search...">
+                        <i class='bx bx-search icon-search'></i>
+                        <div class="search-result">
+                            <div class="search-list">
+                                <!-- <a href="#">
+                                    <div class="search-item">
+                                        <i class='bx bx-search icon-search'></i>
+                                        <span>HAVIT HV-G92 Gamepad</span>
+                                    </div>
+                                </a> -->
+    
+                                <!-- message -->
+                                <div class="message">No results were found!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./wishlist.html">
+                        <div class="tools-item">
+                            <i class='bx bx-heart'></i>
+                            <span class="number-icon" id="heart-number">2</span>
+                        </div>
+                    </a>
+                    <a href="./cart.html">
+                        <div class="tools-item">
+                            <i class='bx bx-cart-alt'></i>
+                            <span class="number-icon" id="cart-number">5</span>
+                        </div>
+                    </a>
+                    <div class="tools-item account" id="account">
+                        <i class='bx bx-user'></i>
+                        <div class="md-account" id="md-account">
+                            <a href="#">
+                                <i class='bx bx-user'></i>
+                                <span>Manage My Account</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxs-shopping-bags'></i>
+                                <span>My Order</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bx-log-out'></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end -->
+
+    <!-- main -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="wishlist-nav">
+                <div class="contact-title">
+                    <div class="contact-fix">
+                        <a href="./index.html">Home</a>
+                        &#160;/&#160;
+                        <p>Havic HV G-92 Gamepad</p>
+                    </div>
+                </div>
+                <div class="yield-nav">
+                    <div class="yield-container">
+                        <div class="yield-img">
+                            <div class="yield-list">
+                                <div class="yield-item active">
+                                    <img src="./assets/images/product-3a.png" alt="img">
+                                </div>
+                                <div class="yield-item">
+                                    <img src="./assets/images/product-3a.png" alt="img">
+                                </div>
+                                <div class="yield-item">
+                                    <img src="./assets/images/product-3a.png" alt="img">
+                                </div>
+                                <div class="yield-item">
+                                    <img src="./assets/images/product-3a.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="yield-img__big">
+                                <img src="./assets/images/product-10a.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="yield-wrap">
+                            <h2 class="webkit-text">Havic HV G-92 Gamepad</h2>
+                            <h4>1,999,000<sup>đ</sup></h4>
+                            <p class="webkit-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sit voluptatum aut doloremque nihil eaque deleniti similique odit consectetur omnis dolorem. Ea repellendus sit expedita doloremque dicta inventore et iure.</p>
+                            <hr>
+                            <form action="" method="post">
+                                <input type="hidden" name="check" value="">
+                                <div class="size">
+                                    <label>Size:</label>
+                                    <button class="size-button active" type="button">XS</button>
+                                    <button class="size-button" type="button">S</button>
+                                    <button class="size-button" type="button">M</button>
+                                    <button class="size-button" type="button">L</button>
+                                </div>
+                                <div class="yield-action">
+                                    <div class="yield-number">
+                                        <button type="button" id="reduce">-</button>
+                                        <input id="number-btn" type="text" min="1" value="1">
+                                        <button type="button" id="increase">+</button>
+                                    </div>
+                                    <button type="button" id="add-like">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <a href="#">
+                                <button type="button" class="buy-now">Buy Now</button>
+                            </a>
+                            <img class="yeair-img" src="./assets/images/yeair.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <section class="section month">
+                    <div class="section-title">Related Item</div>
+                    <div class="todays-slide__item yield-product">
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-item__img">
+                                    <img src="./assets/images/product-1a.png" alt="product-img">
+                                    <button class="add-cart" type="button">Add To Cart</button>
+                                </div>
+                                <h4 class="product-name webkit-text">Havic HV G-92 Gamepad</h4>
+                            </a>
+                            <div class="product-price">
+                                <span id="price-new">$120</span>
+                                <span id="price-old">$160</span>
+                            </div>
+                            <div class="product-action">
+                                <i class='bx bx-map-pin'></i>
+                                <span>Hà Nội</span>
+                            </div>
+                            <div class="discount">-40%</div>
+                            <div class="product-tools">
+                                <button class="product-tl__button" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+                                <button class="product-tl__button product-button__eye" type="button">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-item__img">
+                                    <img src="./assets/images/product-1a.png" alt="product-img">
+                                    <button class="add-cart" type="button">Add To Cart</button>
+                                </div>
+                                <h4 class="product-name webkit-text">Havic HV G-92 Gamepad</h4>
+                            </a>
+                            <div class="product-price">
+                                <span id="price-new">$120</span>
+                                <span id="price-old">$160</span>
+                            </div>
+                            <div class="product-action">
+                                <i class='bx bx-map-pin'></i>
+                                <span>Hà Nội</span>
+                            </div>
+                            <div class="discount">-40%</div>
+                            <div class="product-tools">
+                                <button class="product-tl__button" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+                                <button class="product-tl__button product-button__eye" type="button">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-item__img">
+                                    <img src="./assets/images/product-1a.png" alt="product-img">
+                                    <button class="add-cart" type="button">Add To Cart</button>
+                                </div>
+                                <h4 class="product-name webkit-text">Havic HV G-92 Gamepad</h4>
+                            </a>
+                            <div class="product-price">
+                                <span id="price-new">$120</span>
+                                <span id="price-old">$160</span>
+                            </div>
+                            <div class="product-action">
+                                <i class='bx bx-map-pin'></i>
+                                <span>Hà Nội</span>
+                            </div>
+                            <div class="discount">-40%</div>
+                            <div class="product-tools">
+                                <button class="product-tl__button" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+                                <button class="product-tl__button product-button__eye" type="button">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-item__img">
+                                    <img src="./assets/images/product-1a.png" alt="product-img">
+                                    <button class="add-cart" type="button">Add To Cart</button>
+                                </div>
+                                <h4 class="product-name webkit-text">Havic HV G-92 Gamepad</h4>
+                            </a>
+                            <div class="product-price">
+                                <span id="price-new">$120</span>
+                                <span id="price-old">$160</span>
+                            </div>
+                            <div class="product-action">
+                                <i class='bx bx-map-pin'></i>
+                                <span>Hà Nội</span>
+                            </div>
+                            <div class="discount">-40%</div>
+                            <div class="product-tools">
+                                <button class="product-tl__button" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+                                <button class="product-tl__button product-button__eye" type="button">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- footer -->
+    <footer>
+        <section class="container footer-top">
+            <div class="footer-top__item">
+                <a href="./index.html" class="logo">Exclusive</a>
+                <p>Get 10% off your first order</p>
+                <div class="footer-submit">
+                    <input type="email" placeholder="Enter your email">
+                    <i class='bx bxl-telegram'></i>
+                </div>
+            </div>
+            <div class="footer-top__item">
+                <h3>Support</h3>
+                <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                <p>exclusive@gmail.com</p>
+                <p>+88015-88888-9999</p>
+            </div>
+            <div class="footer-top__item">
+                <h3>Support</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-top__item">
+                <h3>Download App</h3>
+                <img src="./assets/images/frame.png" alt="">
+                <ul>
+                    <li>
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="footer-below">&#169; Copyright Rimel 2023. All right reserved</div>
+    </footer>
+    <!-- end -->
+
+    <!-- js -->
+    <script>
+        const accountButton = document.getElementById("account");
+        const mdAccount = document.getElementById("md-account");
+
+        // Sự kiện click vào #account
+        accountButton.addEventListener("click", (event) => {
+            // Ngăn sự kiện click trải rộng (bubbling) lên các phần tử cha
+            event.stopPropagation();
+
+            // Kiểm tra trạng thái hiển thị của #md-account
+            if (mdAccount.style.display === "block") {
+                // Nếu đang hiện, ẩn nó đi
+                mdAccount.style.display = "none";
+            } else {
+                // Nếu đang ẩn, hiển thị #md-account
+                mdAccount.style.display = "block";
+            }
+        });
+
+        // Sự kiện click ra ngoài #account và #md-account
+        document.addEventListener("click", (event) => {
+            // Kiểm tra xem sự kiện click có xuất phát từ #account hoặc #md-account không
+            if (!accountButton.contains(event.target) && !mdAccount.contains(event.target)) {
+                // Nếu không, ẩn #md-account
+                mdAccount.style.display = "none";
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lấy tất cả các button có class "size-button"
+            var sizeButtons = document.querySelectorAll('.size-button');
+    
+            // Đặt sự kiện click cho mỗi button
+            sizeButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Xóa lớp "active" từ tất cả các button
+                    sizeButtons.forEach(function (btn) {
+                        btn.classList.remove('active');
+                    });
+    
+                    // Thêm lớp "active" vào button được click
+                    button.classList.add('active');
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lấy các phần tử DOM
+            var reduceButton = document.getElementById('reduce');
+            var increaseButton = document.getElementById('increase');
+            var numberInput = document.getElementById('number-btn');
+    
+            // Thiết lập sự kiện click cho nút increase
+            increaseButton.addEventListener('click', function () {
+                // Tăng giá trị của input lên 1
+                var currentValue = parseInt(numberInput.value, 10);
+                numberInput.value = currentValue + 1;
+    
+                // Kích hoạt nút reduce khi giá trị lớn hơn 1
+                reduceButton.disabled = false;
+            });
+    
+            // Thiết lập sự kiện click cho nút reduce
+            reduceButton.addEventListener('click', function () {
+                // Kiểm tra giá trị của input
+                var currentValue = parseInt(numberInput.value, 10);
+    
+                // Giảm giá trị của input đi 1, nhưng giữ giá trị tối thiểu là 1
+                numberInput.value = Math.max(currentValue - 1, 1);
+    
+                // Vô hiệu hóa nút reduce nếu giá trị là 1
+                if (numberInput.value === '1') {
+                    reduceButton.disabled = true;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
