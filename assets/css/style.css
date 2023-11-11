@@ -1809,7 +1809,6 @@ header {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: var(--tr-0-3);
 }
 .yield-item.active {
     border: 3px solid var(--pink-hover);
@@ -1818,7 +1817,7 @@ header {
     margin-bottom: 0;
 }
 .yield-item img {
-    width: 60%;
+    width: 50%;
     height: auto;
     object-fit: cover;
 }

@@ -108,16 +108,16 @@
                         <div class="yield-img">
                             <div class="yield-list">
                                 <div class="yield-item active">
-                                    <img src="./assets/images/product-3a.png" alt="img">
+                                    <img src="./assets/images/product-10a.png" alt="img">
                                 </div>
                                 <div class="yield-item">
-                                    <img src="./assets/images/product-3a.png" alt="img">
+                                    <img src="./assets/images/product-7a.png" alt="img">
                                 </div>
                                 <div class="yield-item">
-                                    <img src="./assets/images/product-3a.png" alt="img">
+                                    <img src="./assets/images/product-5a.png" alt="img">
                                 </div>
                                 <div class="yield-item">
-                                    <img src="./assets/images/product-3a.png" alt="img">
+                                    <img src="./assets/images/product-6a.png" alt="img">
                                 </div>
                             </div>
                             <div class="yield-img__big">
@@ -344,6 +344,31 @@
                 // Nếu không, ẩn #md-account
                 mdAccount.style.display = "none";
             }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lấy danh sách các .yield-item
+            var yieldItems = document.querySelectorAll('.yield-item');
+    
+            // Lặp qua từng .yield-item và thiết lập sự kiện click
+            yieldItems.forEach(function (item) {
+                item.addEventListener('click', function () {
+                    // Lấy đường dẫn ảnh từ thẻ img bên trong .yield-item
+                    var imgSrc = item.querySelector('img').src;
+    
+                    // Thay đổi đường dẫn ảnh của .yield-img__big
+                    document.querySelector('.yield-img__big img').src = imgSrc;
+    
+                    // Xoá lớp .active từ tất cả các .yield-item
+                    yieldItems.forEach(function (el) {
+                        el.classList.remove('active');
+                    });
+    
+                    // Thêm lớp .active cho .yield-item được click
+                    item.classList.add('active');
+                });
+            });
         });
     </script>
     <script>
