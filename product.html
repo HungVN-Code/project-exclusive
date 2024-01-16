@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- header -->
@@ -98,50 +97,82 @@
     <!-- main -->
     <div class="container">
         <div class="wrapper">
-            <div class="contact-nav">
+            <div class="wishlist-nav">
                 <div class="contact-title">
                     <div class="contact-fix">
                         <a href="./index.html">Home</a>
                         &#160;/&#160;
-                        <p>Account</p>
+                        <p>HAVIT HV-G92 Gamepad</p>
                     </div>
                 </div>
-                <div class="contact-wrap">
-                    <form accept="" method="" class="contact-form contact-form-txt">
-                        <h2>Edit Your Profile</h2>
-                        <div class="account-group">
-                            <div class="account-form">
-                                <label>First Name</label>
-                                <input class="contact-input" id="account-input" type="text" value="Md">
+                <div class="product-wrap">
+                    <div class="product-imgs">
+                        <div class="list-img-small">
+                            <div class="item-img-small active" id="img-small" onclick="changeImage(this)">
+                                <img src="./assets/images/product-3a.png" alt="img">
                             </div>
-                            <div class="account-form">
-                                <label>Last Name</label>
-                                <input class="contact-input" id="account-input" type="text" value="Rimel">
+                            <div class="item-img-small" id="img-small" onclick="changeImage(this)">
+                                <img src="./assets/images/product-2a.png" alt="img">
                             </div>
-                        </div>
-                        <div class="account-group">
-                            <div class="account-form">
-                                <label>Email</label>
-                                <input class="contact-input" id="account-input" type="text" value="rimel@gmail.com">
+                            <div class="item-img-small" id="img-small" onclick="changeImage(this)">
+                                <img src="./assets/images/product-5a.png" alt="img">
                             </div>
-                            <div class="account-form">
-                                <label>Address</label>
-                                <input class="contact-input" id="account-input" type="text" value="Kingston, 5236, United State">
+                            <div class="item-img-small" id="img-small" onclick="changeImage(this)">
+                                <img src="./assets/images/product-1a.png" alt="img">
                             </div>
                         </div>
-                        <div class="account-form">
-                            <label>Password Changes</label>
-                            <div class="account-pass">
-                                <input class="contact-input" id="account-input" type="text" placeholder="Current Passwod">
-                                <input class="contact-input" id="account-input" type="text" placeholder="New Passwod">
-                                <input class="contact-input" id="account-input" type="text" placeholder="Confirm New Passwod">
+                        <div class="img-big">
+                            <img id="img-big" src="./assets/images/product-3a.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h2>HAVIT HV-G92 Gamepad</h2>
+                        <nav class="pro-nav-st">
+                            <div class="product-ct-star">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
+                            <span>|</span>
+                            <p>in stock</p>
+                        </nav>
+                        <h1>$120</h1>
+                        <p>PlayStation 5 Controller Skin High quality vinyl with air channel 
+                            adhesive for easy bubble free install & mess free removal Pressure 
+                            sensitive.</p>
+                        <hr>
+                        <div class="product-form">
+                            <h4>Colours:</h4>
+                            <nav>
+                                <div class="pro-color active" style="background: palegoldenrod;" onclick="changeColor(this)"></div>
+                                <div class="pro-color" style="background: black;" onclick="changeColor(this)"></div>
+                            </nav>
                         </div>
-                        <div class="account-button">
-                            <button class="contact-button" id="cancel-button" type="button">Cancel</button>
-                            <button class="contact-button" id="save-button" type="button">Save changes</button>
+                        <div class="product-form">
+                            <h4>Size:</h4>
+                            <nav>
+                                <div class="pro-size active" onclick="changeSize(this)">XS</div>
+                                <div class="pro-size" onclick="changeSize(this)">S</div>
+                                <div class="pro-size" onclick="changeSize(this)">M</div>
+                                <div class="pro-size" onclick="changeSize(this)">L</div>
+                                <div class="pro-size" onclick="changeSize(this)">XL</div>
+                            </nav>
                         </div>
-                    </form>
+                        <div class="product-nb">
+                            <nav>
+                                <div class="pro-mumber">
+                                    <button id="number-prev" type="button" onclick="decrement()">-</button>
+                                    <input id="number-text" type="text" placeholder="1" value="1" readonly>
+                                    <button id="number-next" type="button" onclick="increment()">+</button>
+                                </div>
+                                <a href="#">
+                                    <button class="pro-btn" type="button">Buy Now</button>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,70 +226,73 @@
     </footer>
     <!-- end -->
 
+    <!-- bacome-back -->
+    <div class="bacome-back">
+        <i class='bx bx-chevrons-up'></i>
+    </div>
+    <!-- end -->
+
     <!-- js -->
     <script>
-        const accountButton = document.getElementById("account");
-        const mdAccount = document.getElementById("md-account");
-    
-        // Sự kiện click vào #account
-        accountButton.addEventListener("click", (event) => {
-            // Ngăn sự kiện click trải rộng (bubbling) lên các phần tử cha
-            event.stopPropagation();
-    
-            // Kiểm tra trạng thái hiển thị của #md-account
-            if (mdAccount.style.display === "block") {
-                // Nếu đang hiện, ẩn nó đi
-                mdAccount.style.display = "none";
-            } else {
-                // Nếu đang ẩn, hiển thị #md-account
-                mdAccount.style.display = "block";
-            }
-        });
-    
-        // Sự kiện click ra ngoài #account và #md-account
-        document.addEventListener("click", (event) => {
-            // Kiểm tra xem sự kiện click có xuất phát từ #account hoặc #md-account không
-            if (!accountButton.contains(event.target) && !mdAccount.contains(event.target)) {
-                // Nếu không, ẩn #md-account
-                mdAccount.style.display = "none";
-            }
-        });
+        function changeImage(element) {
+            // Remove 'active' class from all items
+            var smallImages = document.querySelectorAll('.item-img-small');
+            smallImages.forEach(function (img) {
+                img.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked item
+            element.classList.add('active');
+
+            // Get the source of the clicked image and set it as the source for the big image
+            var imgSrc = element.querySelector('img').src;
+            document.getElementById('img-big').src = imgSrc;
+        }
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Lưu thuộc tính hiện tại của #cancel-button
-            var originalBackgroundColor = document.getElementById("cancel-button").style.backgroundColor;
-            var originalColor = document.getElementById("cancel-button").style.color;
-            var originalCursor = document.getElementById("cancel-button").style.cursor;
-    
-            // Lấy danh sách tất cả các ô nhập liệu
-            var inputFields = document.querySelectorAll(".contact-input");
-    
-            // sự kiện input trên mỗi ô nhập liệu
-            inputFields.forEach(function (input) {
-                input.addEventListener("input", function () {
-                    // Nếu có thay đổi, đổi thuộc tính của #cancel-button thành
-                    document.getElementById("cancel-button").style.backgroundColor = "#DB4444";
-                    document.getElementById("cancel-button").style.color = "#FFFFFF";
-                    document.getElementById("cancel-button").style.cursor = "pointer";
-                });
+        function changeColor(element) {
+            // Remove 'active' class from all items
+            var colorItems = document.querySelectorAll('.pro-color');
+            colorItems.forEach(function (item) {
+                item.classList.remove('active');
             });
-    
-            // sự kiện khi nút "Cancel" được nhấp
-            document.getElementById("cancel-button").addEventListener("click", function () {
-                // Đặt lại thuộc tính của #cancel-button về ban đầu
-                document.getElementById("cancel-button").style.backgroundColor = originalBackgroundColor;
-                document.getElementById("cancel-button").style.color = originalColor;
-                document.getElementById("cancel-button").style.cursor = originalCursor;
-    
-                // Đặt lại giá trị của các ô nhập liệu về giá trị mặc định
-                inputFields.forEach(function (input) {
-                    input.value = input.defaultValue;
-                });
-            });
-        });
+
+            // Add 'active' class to the clicked item
+            element.classList.add('active');
+        }
     </script>
-    
-    
+    <script>
+        function changeSize(element) {
+            // Remove 'active' class from all items
+            var sizeItems = document.querySelectorAll('.pro-size');
+            sizeItems.forEach(function (item) {
+                item.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked item
+            element.classList.add('active');
+        }
+    </script>
+    <script>
+        function increment() {
+            var numberText = document.getElementById('number-text');
+            var currentValue = parseInt(numberText.value);
+
+            if (currentValue < 999) {
+                numberText.value = currentValue + 1;
+            }
+        }
+
+        function decrement() {
+            var numberText = document.getElementById('number-text');
+            var currentValue = parseInt(numberText.value);
+
+            if (currentValue > 1) {
+                numberText.value = currentValue - 1;
+            } else {
+                alert('Số lượng không thấp hơn 1 sản phẩm!');
+            }
+        }
+    </script>
 </body>
 </html>
