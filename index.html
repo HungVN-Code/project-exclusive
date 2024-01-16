@@ -75,7 +75,7 @@
                     <div class="tools-item account" id="account" style="display: none;">
                         <i class='bx bx-user'></i>
                         <div class="md-account" id="md-account">
-                            <a href="#">
+                            <a href="./account.html">
                                 <i class='bx bx-user'></i>
                                 <span>Manage My Account</span>
                             </a>
@@ -341,18 +341,6 @@
             </section>
         </div>
     </div>
-    <!-- end -->
-
-    <!-- md-image -->
-        <div class="md-image">
-            <div class="image-wrap">
-                <div class="image-title">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <i class='bx bx-x close-image'></i>
-                </div>
-                <img src="./assets/images/product-2a.png" alt="image">
-            </div>
-        </div>
     <!-- end -->
 
     <!-- footer -->
@@ -716,23 +704,6 @@
                 count = 0; // Đặt biến đếm về 0
             }
         });
-    </script>
-    <script>
-        let mdImage = document.querySelector('.md-image');
-        let buttonEye = document.querySelectorAll('.product-button__eye');
-        let closeImage = document.querySelector('.close-image');
-
-        buttonEye.forEach(item => {
-            item.addEventListener('click', ()=> {
-                mdImage.classList.add('show');
-                document.body.classList.add('hidden-scoll');
-            })
-        })
-
-        closeImage.onclick = ()=> {
-            mdImage.classList.remove('show');
-            document.body.classList.remove('hidden-scoll');
-        }
     </script>
 </body>
 </html>

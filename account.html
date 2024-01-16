@@ -42,16 +42,22 @@
                         <input class="search-input" type="text" placeholder="Search...">
                         <i class='bx bx-search icon-search'></i>
 
-                        <div class="search-list">
-                            <!-- <a href="#">
-                                <div class="search-item">
-                                    <i class='bx bx-search icon-search'></i>
-                                    <span>HAVIT HV-G92 Gamepad</span>
-                                </div>
-                            </a> -->
+                        <!-- search-result -->
+                        <div class="search-result">
+                            <div class="search-title">Search Results:
+                                &#160;<span>4</span>&#160;Results
+                            </div>
+                            <div class="search-list">
+                                <!-- <a href="#">
+                                    <div class="search-item">
+                                        <i class='bx bx-search icon-search'></i>
+                                        <span>HAVIT HV-G92 Gamepad</span>
+                                    </div>
+                                </a> -->
 
-                            <!-- message -->
-                            <div class="message">No results were found!</div>
+                                <!-- message -->
+                                <div class="message">No results were found!</div>
+                            </div>
                         </div>
                     </div>
                     <a href="./wishlist.html">
@@ -69,7 +75,7 @@
                     <div class="tools-item account" id="account">
                         <i class='bx bx-user'></i>
                         <div class="md-account" id="md-account">
-                            <a href="./account.html">
+                            <a href="#">
                                 <i class='bx bx-user'></i>
                                 <span>Manage My Account</span>
                             </a>
@@ -92,73 +98,50 @@
     <!-- main -->
     <div class="container">
         <div class="wrapper">
-            <div class="wishlist-nav">
+            <div class="contact-nav">
                 <div class="contact-title">
                     <div class="contact-fix">
                         <a href="./index.html">Home</a>
                         &#160;/&#160;
-                        <p>Cart</p>
+                        <p>Account</p>
                     </div>
                 </div>
-                <div class="cart-wrap">
-                    <table>
-                        <thead>
-                            <th>Product picture</th>
-                            <th>Name product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Subtotal</th>
-                            <th>Action</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="cart-img">
-                                    <img src="./assets/images/product-1a.png" alt="img">
-                                </td>
-                                <td class="cart-text webkit-text">HAVIT HV-G92 Gamepad</td>
-                                <td class="cart-text">$160</td>
-                                <td class="cart-adjust"><input type="number" min="1" value="1"></td>
-                                <td class="cart-text">$160</td>
-                                <td>
-                                    <a href="#">
-                                        <button><i class="bi bi-trash3"></i></button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="cart-img">
-                                    <img src="./assets/images/product-1a.png" alt="img">
-                                </td>
-                                <td class="cart-text webkit-text">HAVIT HV-G92 Gamepad</td>
-                                <td class="cart-text">$160</td>
-                                <td class="cart-adjust"><input type="number" min="1" value="1"></td>
-                                <td class="cart-text">$160</td>
-                                <td>
-                                    <a href="#">
-                                        <button><i class="bi bi-trash3"></i></button>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="cart-synthetic">
-                        <h4>Total number of products: <span>2</span> product</h4>
-                        <button class="remove-all" type="button">Remove all</button>
-                    </div>
-                    <div class="cart-pay">
-                        <div class="cart-pay__body">
-                            <div class="cart-poin"><p>Total cost of goods:</p> <span>$240</span></div>
-                            <div class="cart-poin"><p>Transport fee:</p> <span>$4</span></div>
-                            <div class="cart-poin"><p>Discount code (if any):</p> <span>$0</span></div>
-                            <div class="cart-poin"><p>Total payment:</p> <span>$244</span></div>
+                <div class="contact-wrap">
+                    <form accept="" method="" class="contact-form contact-form-txt">
+                        <h2>Edit Your Profile</h2>
+                        <div class="account-group">
+                            <div class="account-form">
+                                <label>First Name</label>
+                                <input class="contact-input" id="account-input" type="text" value="Md">
+                            </div>
+                            <div class="account-form">
+                                <label>Last Name</label>
+                                <input class="contact-input" id="account-input" type="text" value="Rimel">
+                            </div>
                         </div>
-                        <div class="cart-footer">
-                            <p>Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo <a href="#">Điều khoản của Exclusive</a></p>
-                            <a href="./checkout.html">
-                                <button class="order-cart" type="button">Proceed to payment</button>
-                            </a>
+                        <div class="account-group">
+                            <div class="account-form">
+                                <label>Email</label>
+                                <input class="contact-input" id="account-input" type="text" value="rimel@gmail.com">
+                            </div>
+                            <div class="account-form">
+                                <label>Address</label>
+                                <input class="contact-input" id="account-input" type="text" value="Kingston, 5236, United State">
+                            </div>
                         </div>
-                    </div>
+                        <div class="account-form">
+                            <label>Password Changes</label>
+                            <div class="account-pass">
+                                <input class="contact-input" id="account-input" type="text" placeholder="Current Passwod">
+                                <input class="contact-input" id="account-input" type="text" placeholder="New Passwod">
+                                <input class="contact-input" id="account-input" type="text" placeholder="Confirm New Passwod">
+                            </div>
+                        </div>
+                        <div class="account-button">
+                            <button class="contact-button" id="cancel-button" type="button">Cancel</button>
+                            <button class="contact-button" id="save-button" type="button">Save changes</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -178,7 +161,7 @@
             </div>
             <div class="footer-top__item">
                 <h3>Support</h3>
-                <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                <p>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
                 <p>exclusive@gmail.com</p>
                 <p>+88015-88888-9999</p>
             </div>
@@ -216,12 +199,12 @@
     <script>
         const accountButton = document.getElementById("account");
         const mdAccount = document.getElementById("md-account");
-
+    
         // Sự kiện click vào #account
         accountButton.addEventListener("click", (event) => {
             // Ngăn sự kiện click trải rộng (bubbling) lên các phần tử cha
             event.stopPropagation();
-
+    
             // Kiểm tra trạng thái hiển thị của #md-account
             if (mdAccount.style.display === "block") {
                 // Nếu đang hiện, ẩn nó đi
@@ -231,7 +214,7 @@
                 mdAccount.style.display = "block";
             }
         });
-
+    
         // Sự kiện click ra ngoài #account và #md-account
         document.addEventListener("click", (event) => {
             // Kiểm tra xem sự kiện click có xuất phát từ #account hoặc #md-account không
@@ -241,6 +224,41 @@
             }
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Lưu màu nền hiện tại của #cancel-button
+            var originalBackgroundColor = document.getElementById("cancel-button").style.backgroundColor;
+            var originalColor = document.getElementById("cancel-button").style.color;
+            var originalCursor = document.getElementById("cancel-button").style.cursor;
+    
+            // Lấy danh sách tất cả các ô nhập liệu
+            var inputFields = document.querySelectorAll(".contact-input");
+    
+            // Theo dõi sự kiện input trên mỗi ô nhập liệu
+            inputFields.forEach(function (input) {
+                input.addEventListener("input", function () {
+                    // Nếu có sự thay đổi, đổi màu nền của #cancel-button thành đỏ
+                    document.getElementById("cancel-button").style.backgroundColor = "#DB4444";
+                    document.getElementById("cancel-button").style.color = "#FFFFFF";
+                    document.getElementById("cancel-button").style.cursor = "pointer";
+                });
+            });
+    
+            // Theo dõi sự kiện khi nút "Cancel" được nhấp
+            document.getElementById("cancel-button").addEventListener("click", function () {
+                // Đặt lại màu nền của #cancel-button về màu gốc
+                document.getElementById("cancel-button").style.backgroundColor = originalBackgroundColor;
+                document.getElementById("cancel-button").style.color = originalColor;
+                document.getElementById("cancel-button").style.cursor = originalCursor;
+    
+                // Đặt lại giá trị của các ô nhập liệu về giá trị mặc định
+                inputFields.forEach(function (input) {
+                    input.value = input.defaultValue;
+                });
+            });
+        });
+    </script>
+    
+    
 </body>
-
 </html>
